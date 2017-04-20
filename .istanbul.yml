@@ -1,0 +1,5 @@
+verbose: true
+instrumentation:
+    extensions:
+        - .ts
+    excludes: ['*.d.ts' , '*.spec.ts']
