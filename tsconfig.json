@@ -6,7 +6,6 @@
     "emitDecoratorMetadata": true,
     "experimentalDecorators": true,
     "allowSyntheticDefaultImports": true,
-    "sourceMap": true,
     "importHelpers": true,
     "strictNullChecks": false,
     "noImplicitAny": false,
@@ -14,6 +13,7 @@
     "noEmitHelpers": false,
     "declaration": true,
     "baseUrl": "./src",
+    "sourceMap": true,
     "lib": [
       "es2015",
       "es2016",
@@ -27,8 +27,7 @@
       "jasmine",
       "node",
       "source-map",
-      "uglify-js",
-      "webpack"
+      "uglify-js"
     ]
   },
   "exclude": [

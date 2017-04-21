@@ -1,0 +1,40 @@
+{
+    // Use IntelliSense to learn about possible Node.js debug attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "node",
+            "protocol" : "inspector",
+            "request": "launch",
+            "name": "Debug Jasmine tests",
+            "runtimeExecutable": "${workspaceRoot}/node_modules/ts-node/dist/bin.js",
+            "windows": {
+                "runtimeExecutable": "npm.cmd"
+            },
+            "stopOnEntry": false,
+            "runtimeArgs": [
+                "${workspaceRoot}/spec-runner.js",
+                "--require ts-node/register"
+            ],
+            "cwd": "${workspaceRoot}",
+            "port": 9229
+            
+        },
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "Launch Program",
+            "program": "${file}"
+        },
+        {
+            "type": "node",
+            "request": "attach",
+            "protocol" : "inspector",
+            "name": "Attach to Port",
+            "address": "localhost",
+            "port": 9229
+        }
+    ]
+}
